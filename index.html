@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-eqiv="Content-Type" content="text/html" charset="euc-kr">
+	<meta name="viewport" content="width=1300, maximum-scale=1.5">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>성공을 위한 러닝 메이트 - 메가로스쿨</title>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/slides.min.jquery.js"></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/rolling.js"></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/inputPlaceholder.js"></script>
+	<!--2020.04.28 TweenMax 추가-->
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/TweenMax.min.js?ver=20200428"></script>
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery.easing.min.js?ver=20200428"></script>
+	<!--//2020.04.28 TweenMax 추가-->
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/common.js?ver=20200211"></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/gnb.js" ></script>
+    <script type="text/javascript" src="http://img.megals.co.kr/common/js/jcarousellite_1.0.1.pack.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/common.css" />
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery.cycle.all.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/lecture.css" />
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/professor.css" />
+    <link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/academy.css" />
+	<link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/curri.css" />
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/jquery.bxslider.js"></script> 
+	<link rel="stylesheet" type="text/css" href="http://img.megals.co.kr/common/css/mega_bxslider_ui.css">
+	<script type="text/javascript" src="http://img.megals.co.kr/common/js/mega_bxslider_ui.js"></script>
+</head>
+<body>
+	<div id="head" style="height: 152px; background:#f3f3f5;">HEADER</div>
+	<!--// GNB -->
+
+
+	<!-- container -->
+	<div id="container">
+
+		<!-- 2025 메가패스(올패스, 과목패스) 티저 -->
+		<style>
+			@import url('https://webfontworld.github.io/pretendard/Pretendard.css');
+			#teaser { position: relative; }
+			#teaser > [class^="stn_"] { position: relative; }
+			#teaser > [class^="stn_"] .pay_prev_wrap{position:relative;z-index:10} /* 결제미리보기&Family사이트 z-index문제 해결 */
+			#teaser .inner { position: relative; width: 1200px; margin: 0 auto; text-align: center; }
+			#teaser .stn_top { background: #7ae0da url(http://img.megals.co.kr/2023/1116_teaser/top_bg.jpg) no-repeat center 0;height: 1086px;overflow: hidden;}
+			#teaser .stn_01 { background: #2b2e2e url(http://img.megals.co.kr/2023/1116_teaser/teaser_cont1_bg.jpg) no-repeat center 0;}
+			#teaser .stn_01::before{content: '';position: absolute;bottom: 0;background: #ededed;height: 240px;width: 100%;}
+			#teaser .stn_02 { background: #fff;}
+			#teaser .stn_03 { background: #fff;}
+			
+			#teaser .stn_top .img{position: absolute;opacity: 0;}
+			#teaser .stn_top .txt{position: absolute;opacity: 0;}
+			#teaser .stn_top .obj{position: absolute;opacity: 0;}
+			#teaser .stn_top .img1{top: 220px;left: 140px;}
+			#teaser .stn_top .img2{top: 220px;left: 140px;transform: rotate(180deg);}
+			#teaser .stn_top .img3{top: 220px;left: 140px;transform: rotate(270deg);}
+			#teaser .stn_top .img4{top: 220px;left: 140px;transform: rotate(90deg);}
+			#teaser .stn_top .txt1{top: 492px;left: 60px;opacity: 1;animation: wipe-cinematic-in 1s ease-in-out 1.8s both;opacity: 0;}
+			#teaser .stn_top .txt2{top: 492px;left: 50%;transform: translateX(-50%); opacity: 0;}
+			#teaser .stn_top .txt3{top: 492px;left: 50%;transform: translateX(-50%); opacity: 0;}
+			#teaser .stn_top .txt4{top: 316px;left:372px;width: 0;overflow: hidden;}
+			#teaser .stn_top .obj1{top: 74px;left: -395px;}
+			#teaser .stn_top .obj2{top: -20px;left:-206px;}
+			#teaser .stn_top .obj3{top: -5px;left:10px;}
+			#teaser .stn_top .obj4{top: -20px;left:840px;}
+			#teaser .stn_top .obj5{top: 125px;left:930px;}
+			#teaser .stn_top .obj6{top: -20px;left:1201px;}
+			#teaser .stn_top .dday_wrap{position: absolute;right: 57px;top: 249px;opacity: 0;}
+			#teaser .stn_top .dday_wrap .day{font-family: 'pretendard';font-size: 86px;font-weight: 900;color: #fff;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);white-space: nowrap;}
+
+			#teaser .stn_01 .js_tab_wrap{padding-bottom: 150px;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text{display: flex;justify-content: space-between;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li{width: 50%;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li a{display: flex;flex-direction: column;align-items: center;height: 120px;justify-content: center;font-size: 24px;font-family: 'pretendard';color: #5a6e8c;background: #050f41;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li:first-child a{border-top-left-radius: 60px;border-bottom-left-radius: 60px;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li:last-child a{border-top-right-radius: 60px;border-bottom-right-radius: 60px;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li a strong{font-size: 42px;font-weight: 900;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li.on a{background: #ffdc3c; color:#111111;position: relative;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li.tab2.on a{background: #32f0f0; color:#111111;position: relative;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li.on a::after{content: '';position: absolute;left: 50%;transform: translateX(-50%);top: 120px;border-top: 22px solid #ffdc3c;border-left: 25px solid transparent;border-right: 25px solid transparent;width: 0;height: 0;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_text li.tab2.on a::after{content: '';position: absolute;left: 50%;transform: translateX(-50%);top: 120px;border-top: 22px solid #32f0f0;border-left: 25px solid transparent;border-right: 25px solid transparent;width: 0;height: 0;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_con_type{display:none;margin-top: 40px;}
+			#teaser .stn_01 .js_tab_wrap .js_tab_con_type.on{display:block}
+			#teaser .stn_01 .event_wrap{position: relative;}
+			#teaser .stn_01 .event_wrap .btn_list{position: absolute;top: 448px;left: 99px;}
+			#teaser .stn_01 .event_wrap .btn{display: block;}
+			#teaser .stn_01 .event_wrap .btn.end{pointer-events: none;}
+			#teaser .stn_01 .event_wrap .btn.apply{width: 460px;height: 80px;line-height: 80px;font-family: 'pretendard';font-weight: 900;font-size: 26px;background: #0082ff;border-radius: 40px;color: #fff;}
+			#teaser .stn_01 .event_wrap .btn.apply::before{content: '사전신청하기';color: #fff;position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);opacity: 0;}
+			#teaser .stn_01 .event_wrap .btn.apply:hover::before{animation: text-hover .8s ease infinite;width: 100%;display: block;}
+			#teaser .stn_01 .event_wrap .ico_end{position: absolute;top: 346px;left: 440px;}
+
+			@keyframes wipe-cinematic-in {0% {clip-path: inset(0 100% 0 100%);}100% {clip-path: inset(0 0 0 0);opacity: 1}}
+			@keyframes text-hover {0% {font-size: 26px;opacity: 1;}100% {font-size: 50px;color: transparent;}}
+		</style>
+		<script>
+			$(document).ready(function () {
+				var tlt = new TimelineLite();
+				tlt.to('.stn_top .img', 1, {x:150,opacity:1},.5)
+					.to('.stn_top .img', .5, {x:102,delay:.1},.7)
+					.to('.stn_top .img3', .5, {x:452,delay:.1,rotation:0},.7)
+					.to('.stn_top .img2', .5, {x:452,delay:.1, rotation:270},.7)
+					.to('.stn_top .img4', .5, {x:452,delay:.1, rotation:180},.7)
+					.to('.stn_top .img', .5, {y:-15,delay:.5},.7)
+					.to('.stn_top .img2', .6, {y:349,delay:.5,rotation:360},.7)
+					.to('.stn_top .img4', .6, {y:349,delay:.5},.7)
+					.to('.stn_top .img', .5, {left:150,delay:.8},.7)
+					.to('.stn_top .img4', .5, {x:105,delay:.8,rotation:0},.7)
+					.to('.stn_top .img_wrap', .5, {scale:1.1,delay:2.5,left:-60,top:-130},.7)
+					.to('.stn_top .img1', .8, {delay:1.5,left:-1200,opacity:0,ease: Power1.easeInOut},.7)
+					.to('.stn_top .img2', .8, {delay:1.5,left:1200,opacity:0,ease: Power1.easeInOut},.7)
+					.to('.stn_top .img3', .8, {delay:1.5,left:1200,opacity:0,ease: Power1.easeInOut},.7)
+					.to('.stn_top .img4', .8, {delay:1.5,left:-1200,opacity:0,ease: Power1.easeInOut},.7)
+					.to('.stn_top .txt2', .7, {delay:1.5,top:100,opacity:1,ease: Power3.easeInOut},.7)
+					.to('.stn_top .txt3', .7, {delay:1.5,top:854,opacity:1,ease: Power3.easeInOut},.7)
+					.to('.stn_top .txt4', .7, {delay:2,width:448,opacity:1,ease: Power3.easeInOut},.7)
+					.to('.stn_top .obj1', .8, {delay:1.9,y:20,ease: Power1.easeInOut,opacity:1},.7)
+					.to('.stn_top .obj2', .8, {delay:1.7,y:20,ease: Power4.easeInOut,opacity:1},.7)
+					.to('.stn_top .obj3', .8, {delay:2,y:20,ease: Power4.easeInOut,opacity:1},.7)
+					.to('.stn_top .obj4', .8, {delay:1.8,y:20,ease: Power4.easeInOut,opacity:1},.7)
+					.to('.stn_top .obj5', .8, {delay:2.2,y:20,ease: Power4.easeInOut,opacity:1},.7)
+					.to('.stn_top .obj6', .8, {delay:2.1,y:20,ease: Power4.easeInOut,opacity:1},.7)
+					.to('.stn_top .obj6', .8, {delay:1.7,y:20,ease: Power4.easeInOut,opacity:1},.7)
+					.to('.stn_top .dday_wrap', .5, {delay:2.5,ease: Power4.easeInOut,opacity:1},.7)					
+
+					$('.js_tab_text li a').on('click', function (e) {
+						var targetId = $(this).attr("href");
+						e.preventDefault();
+						$(this).parent('li').siblings().removeClass('on');
+						$(this).parent('li').addClass('on');
+						$(targetId).addClass('on').siblings().removeClass('on');
+					});
+
+			});
+		</script>
+		<div id="teaser">
+			<div class="stn_top">
+				<div class="inner">
+					<div class="img_wrap">
+						<div class="img img1"><img src="http://img.megals.co.kr/2023/1116_teaser/top.png" alt=""></div>
+						<div class="img img2"><img src="http://img.megals.co.kr/2023/1116_teaser/top2.png" alt=""></div>
+						<div class="img img3"><img src="http://img.megals.co.kr/2023/1116_teaser/top3.png" alt=""></div>
+						<div class="img img4"><img src="http://img.megals.co.kr/2023/1116_teaser/top4.png" alt=""></div>
+					</div>
+					<div class="obj_wrap">
+						<div class="obj obj1"><img src="http://img.megals.co.kr/2023/1116_teaser/obj1.png" alt=""></div>
+						<div class="obj obj2"><img src="http://img.megals.co.kr/2023/1116_teaser/obj2.png" alt=""></div>
+						<div class="obj obj3"><img src="http://img.megals.co.kr/2023/1116_teaser/obj3.png" alt=""></div>
+						<div class="obj obj4"><img src="http://img.megals.co.kr/2023/1116_teaser/obj4.png" alt=""></div>
+						<div class="obj obj5"><img src="http://img.megals.co.kr/2023/1116_teaser/obj5.png" alt=""></div>
+						<div class="obj obj6"><img src="http://img.megals.co.kr/2023/1116_teaser/obj6.png" alt=""></div>
+					</div>
+					<div class="txt_wrap">
+						<div class="txt txt1"><img src="http://img.megals.co.kr/2023/1116_teaser/txt2.png" alt=""></div>
+						<div class="txt txt2"><img src="http://img.megals.co.kr/2023/1116_teaser/txt1.png" alt=""></div>
+						<div class="txt txt3"><img src="http://img.megals.co.kr/2023/1116_teaser/txt3.png" alt=""></div>
+						<div class="txt txt4"><img src="http://img.megals.co.kr/2023/1116_teaser/txt4.png" alt=""></div>
+					</div>
+					<div class="dday_wrap">
+						<img src="http://img.megals.co.kr/2023/1116_teaser/dday.png" alt="">
+						<strong class="day">D-7</strong>
+					</div>
+				</div>
+			</div>
+			<div class="stn_01">
+				<div class="inner">
+					<div class="js_tab_wrap">
+						<ul class="js_tab_text">
+							<li class="tab1 on"><a href="#js_tab_text1">전과목 X 전체교수진<strong>2025 LEET 올패스</strong></a></li>
+							<li class="tab2"><a href="#js_tab_text2">선택과목 X 전체교수진<strong>2025 LEET 과목패스</strong></a></li>
+						</ul>
+						<div id="js_tab_text1" class="js_tab_con_type on">
+							<img src="http://img.megals.co.kr/2023/1116_teaser/tab1.png" alt="2025 LEET 올패스">
+						</div>
+						<div id="js_tab_text2" class="js_tab_con_type">
+							<img src="http://img.megals.co.kr/2023/1116_teaser/tab2.png" alt="2025 LEET 과목패스">
+						</div>
+					</div>
+					<div class="event_wrap">
+						<img src="http://img.megals.co.kr/2023/1116_teaser/teaser_cont1.jpg" alt="2025 LEET 메가패스 사전신청하고 할인쿠폰받기">
+						<div class="btn_list">
+							<a href="javascript:;" class="btn apply">사전신청하기</a>
+							<!-- <a href="javascript:;" class="btn end"><img src="http://img.megals.co.kr/2023/1116_teaser/btn_end.png" al감="사전신청 완료"></a> -->
+						</div>
+						<!-- <div class="ico_end"><img src="http://img.megals.co.kr/2023/1116_teaser/ico_end.png" alt="마감"></div> -->
+						<img src="http://img.megals.co.kr/2023/1116_teaser/teaser_cont1-2.jpg" alt="유의사항">
+					</div>
+				</div>
+			</div>
+			<div class="stn_02">
+				<div class="inner">
+					<img src="http://img.megals.co.kr/2023/1116_teaser/teaser_cont2.jpg" alt="All New 2025 LEET 메가패스">
+				</div>
+			</div>
+		</div>
+		<!-- // 2025 메가패스(올패스, 과목패스) 티저 -->
+
+	</div>
+	<!--// container -->
+
+	<!-- footer -->
+	<div id="footer" style="height: 139px; background:#f3f3f5;">FOOTER</div>
+	<!--// footer -->
+</body>
+</html>
+
+<script type="text/javascript"> 
+	$(document).ready(function() {
+		fnSetFocus( 'id' , 'container' , 0 );
+	});
+</script> 
